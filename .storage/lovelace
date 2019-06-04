@@ -1,0 +1,143 @@
+{
+    "data": {
+        "config": {
+            "title": "Home",
+            "views": [
+                {
+                    "badges": [
+                        "sensor.last_boot",
+                        "sensor.ip_addresse",
+                        "sensor.memory_use_percent",
+                        "sensor.memory_free",
+                        "sensor.load_1m",
+                        "sensor.load_5m",
+                        "sensor.disk_free",
+                        "sensor.load_15m",
+                        "sensor.processor_use",
+                        "sensor.disk_use_percent",
+                        "sensor.disk_use",
+                        "sun.sun"
+                    ],
+                    "cards": [
+                        {
+                            "entities": [
+                                "automation.gi_ip_addresse",
+                                "automation.login_failure",
+                                "automation.list_banned"
+                            ],
+                            "title": "Automatisering",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "zwave.aeon_labs_zw090_z_stick_gen5_eu"
+                            ],
+                            "title": "Z-Wave",
+                            "type": "entities"
+                        }
+                    ],
+                    "path": "default_view",
+                    "title": "Home"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.disk_free"
+                                },
+                                {
+                                    "entity": "sensor.disk_use"
+                                },
+                                {
+                                    "entity": "sensor.disk_use_percent"
+                                },
+                                {
+                                    "entity": "sensor.last_boot"
+                                },
+                                {
+                                    "entity": "sensor.load_15m"
+                                },
+                                {
+                                    "entity": "sensor.memory_free"
+                                },
+                                {
+                                    "entity": "sensor.memory_use_percent"
+                                },
+                                {
+                                    "entity": "sensor.processor_use"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Serverstatus",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.mb_downloaded"
+                                },
+                                {
+                                    "entity": "sensor.mb_uploaded"
+                                },
+                                {
+                                    "entity": "sensor.ubuntu_router_kbyte_sec_received"
+                                },
+                                {
+                                    "entity": "sensor.ubuntu_router_kbyte_sec_sent"
+                                },
+                                {
+                                    "entity": "sensor.ip_addresse"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Router",
+                            "type": "entities"
+                        }
+                    ],
+                    "panel": false,
+                    "title": "System"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entity": "climate.thermofloor_as_heatit_thermostat_tf_056_heating",
+                            "name": "Loftstue",
+                            "type": "thermostat"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "switch.fibaro_system_fgs213_switch_switch"
+                                }
+                            ],
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.thermofloor_as_heatit_thermostat_tf_056_floor_sensor"
+                                },
+                                {
+                                    "entity": "sensor.thermofloor_as_heatit_thermostat_tf_056_floor_sensor_2"
+                                },
+                                {
+                                    "entity": "sensor.thermofloor_as_heatit_thermostat_tf_056_floor_sensor_3"
+                                },
+                                {
+                                    "entity": "climate.thermofloor_as_heatit_thermostat_tf_056_energy_heat"
+                                }
+                            ],
+                            "type": "entities"
+                        }
+                    ],
+                    "title": "Lys og varme"
+                }
+            ]
+        }
+    },
+    "key": "lovelace",
+    "version": 1
+}

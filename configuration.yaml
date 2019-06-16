@@ -64,6 +64,30 @@ tts:
 # Cloud
 cloud:
 
+recorder:
+  include:
+    domains:
+      - automation
+      - sensor
+      - binary_sensor
+      - climate
+      - switch
+      - device_tracker
+      - script
+      - notify
+      - group
+  exclude:
+    entities:
+      - sensor.disk_free      
+
+speedtestdotnet:
+  scan_interval:
+    minutes: 2
+  monitored_conditions:
+    - ping
+    - download
+    - upload
+
 # telegram
 telegram_bot:
   - platform: polling
